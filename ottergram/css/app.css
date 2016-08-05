@@ -1,0 +1,31 @@
+body {
+  font-size: 10px;
+  background: rgb(149, 194, 215);
+}
+a {
+  text-decoration: none;
+}
+.thumbnail-item + .thumbnail-item {
+  margin-top: 10px;
+}
+.thumbnail-item {
+  display: block;
+  border: 1px solid rbg(100%, 100%, 100%);
+  border: 1px solid rbga(100%, 100%, 100%, 0.8);
+}
+.thumbnail-list {
+  list-style: none;
+  padding: 0;
+}
+.thumbnail-image {
+  width: 100%;
+  display: block;
+}
+.thumbnail-title {
+  background: rgb(96, 125, 139);
+  color: white;
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  font-size: 18px;
+}
