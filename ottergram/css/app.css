@@ -8,12 +8,25 @@
     font-weight: normal;
     font-style: normal;
 }
+html, body {
+  height: 100%;
+}
 body {
   font-size: 10px;
   background: rgb(149, 194, 215);
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
+}
+.main-header {
+  flex: 0 1 auto;
+}
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 .logo-text {
   background: white;
@@ -22,16 +35,18 @@ a {
   font-size: 37px;
   font-family: lakeshore;
 }
-.thumbnail-item + .thumbnail-item {
-  margin-top: 10px;
-}
 .thumbnail-item {
   display: inline-block;
-  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
   border: 1px solid rbg(100%, 100%, 100%);
   border: 1px solid rbga(100%, 100%, 100%, 0.8);
 }
 .thumbnail-list {
+  flex: 0 1 auto;
+  order: 2;
+  justify-content: space-between;
+  display: flex;
   list-style: none;
   padding: 0;
   white-space: nowrap;
@@ -51,4 +66,7 @@ a {
 }
 .detail-image {
   width: 90%;
+}
+.detail-image-container {
+  flex: 1 1 auto;
 }
