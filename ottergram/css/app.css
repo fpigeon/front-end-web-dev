@@ -26,13 +26,16 @@ a {
   margin-top: 10px;
 }
 .thumbnail-item {
-  display: block;
+  display: inline-block;
+  width: 120px;
   border: 1px solid rbg(100%, 100%, 100%);
   border: 1px solid rbga(100%, 100%, 100%, 0.8);
 }
 .thumbnail-list {
   list-style: none;
   padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .thumbnail-image {
   width: 100%;
@@ -45,4 +48,7 @@ a {
   margin: 0;
   padding: 4px 10px;
   font-size: 18px;
+}
+.detail-image {
+  width: 90%;
 }
