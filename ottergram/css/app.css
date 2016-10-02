@@ -50,7 +50,6 @@ a {
   display: inline-block;
   min-width: 120px;
   max-width: 120px;
-  border: 1px solid rbg(100%, 100%, 100%);
   border: 1px solid rbga(100%, 100%, 100%, 0.8);
 }
 .thumbnail-list {
